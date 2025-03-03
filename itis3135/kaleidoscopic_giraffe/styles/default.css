@@ -8,7 +8,7 @@ header{
     font-size: x-large;
     border-width: 5px #301A4B;
     background-color: #301A4B;
-    color:hsl(285, 47%, 72%);
+    color:#E1B7CE;
     border-radius: 10px;
     padding: 40px;
     margin: 50px;
@@ -18,10 +18,10 @@ header{
 header a{
     padding:20px;
     font-size:large;
-    color:#F39A9D;
+    color:#5C8F99;
 }
 header a:visited{
-    color:#EE6D71
+    color:#49727A;
 }
 
 main{
@@ -31,4 +31,21 @@ main{
     padding-left: 150px;
     padding-right: 150px;
     text-align:center;
+}
+
+footer{
+    color:#301A4B;
+    font-size: medium;
+    padding-top:10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    text-align:center;
+}
+
+a{
+    color:#49727A
+
+}
+a:visited{
+    color:#2E474D
 }
