@@ -1,18 +1,15 @@
 body{
     text-align:center;
-    color:#2E2532;
+    color:#301A4B;
     background-color:#C1CEFE;
     font-family: Palatino, URW Palladio L, serif;
+    font-size: x-large;
 }
 
-/*a{
-    color:#C52184
-}
-a:visited{
-    color:#6C0F2E
-}
-*/
 ul{
     text-align:left;
 }
 
+footer{
+    font-size: medium;
+}
