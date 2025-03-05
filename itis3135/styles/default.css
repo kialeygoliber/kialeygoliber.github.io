@@ -2,16 +2,17 @@ body{
     text-align:center;
     color:#2E2532;
     background-color:#C1CEFE;
-    font-family:Lucida Console, monospace
+    font-family: Palatino, URW Palladio L, serif;
 }
 
-a{
+/*a{
     color:#C52184
 }
 a:visited{
     color:#6C0F2E
 }
-
+*/
 ul{
     text-align:left;
 }
+
