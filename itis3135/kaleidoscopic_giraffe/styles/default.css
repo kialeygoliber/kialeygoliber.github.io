@@ -24,6 +24,13 @@ header a:visited{
     color:#49727A;
 }
 
+footer a{
+    color:#5C8F99;
+}
+footer a:visited{
+    color:#49727A;
+}
+
 main{
     color:#301A4B;
     font-size: larger;

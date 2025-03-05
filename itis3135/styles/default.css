@@ -1,4 +1,5 @@
 body{
+    text-align:center;
     color:#2E2532;
     background-color:#C1CEFE;
     font-family:Lucida Console, monospace
@@ -9,4 +10,8 @@ a{
 }
 a:visited{
     color:#6C0F2E
+}
+
+ul{
+    text-align:left;
 }
