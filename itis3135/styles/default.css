@@ -18,6 +18,17 @@ body{
 }
 
 ul{
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-content: left;
+    text-align:left;
+}
+li{
+    padding-bottom: 15px;
+}
+
+
+.evalutaion_list{
     
     font-size: large;
     padding-left: 25%;
