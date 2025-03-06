@@ -1,4 +1,15 @@
+
+/*
+background blue : #C1CEFE
+dark purple: #301A4B
+pink link boxes: #E1B7CE
+reddish pink: #AB4967
+Blue:#0F5257
+light blue: #15737A;
+
+*/
 body{
+    padding:20px;
     text-align:center;
     color:#301A4B;
     background-color:#C1CEFE;
@@ -7,9 +18,61 @@ body{
 }
 
 ul{
-    text-align:left;
+    
+    font-size: large;
+    padding-left: 25%;
+    padding-right:25%;
+    justify-content: left;
+    list-style-position: outside;
+    list-style: none;
 }
+.crap_list {
+
+    padding-bottom:15px;
+    text-align: left;
+    display:inline-block;
+    justify-content: left;
+}
+.c::before, .r::before, .a::before, .p::before{
+    padding-right:10px;
+    font-weight:bolder;
+}
+
+.c::before{
+    content:"Contrast-";
+}
+.r::before{
+    content:"Repitition-";
+}
+.a::before{
+    content:"Alignment-";
+}
+.p::before{
+    content:"Proximity-";
+}
+.good_bad{
+    padding-left: 50px;
+    padding-right:50px;
+    padding-top:15px
+}
+
+
+
 
 footer{
     font-size: medium;
 }
+
+.main-links{
+    color:#15737A;
+
+}
+.main-links:hover, .main-links:active{
+    font-size: larger;
+
+}
+.main-links:hover, .main-links:active, .main-links:visited{
+    color:#0F5257
+
+}
+
