@@ -87,3 +87,34 @@ footer{
 
 }
 
+a{
+    color:#15737A;
+}
+a:visited, a:active, a:hover{
+    color:#0F5257
+}
+
+
+header .button, footer .button{
+    display: inline-block;
+    padding: 3px 6px;
+    background-color: #301A4B;
+    color: #E1B7CE;
+    border-radius: 5px;
+    text-decoration: none;
+
+    margin: 5px;
+    font-size:15px
+}
+
+header .button:hover, footer .button:hover{
+    display: inline-block;
+    padding: 9px 12px;
+    background-color: #E1B7CE;
+    color: #301A4B;
+    border-radius: 5px;
+    text-decoration: none;
+
+    margin: 5px;
+
+}
