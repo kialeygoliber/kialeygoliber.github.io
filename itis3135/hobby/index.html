@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    <title>Movement is Medicine</title>
+
+    <style>
+        /*
+        Raisin Black:#212738
+        Salmon: #F97068
+        off-white: #EDF2EF
+        green: #717744
+        
+        */
+        body{
+            
+            margin-top:225px;
+            font-family: Bookman, URW Bookman L, serif;
+            background-color:#708B75;
+            color:#212738;
+        }
+        a{
+
+            color:#AF5B5B
+
+        }
+         a:active, a:hover{
+
+            color:#F03A47
+        }
+        a:visited{
+            color: #995FA3
+        }
+
+
+
+        html main{
+            display:flex;
+            
+            text-align:center;
+            align-items: center;
+            justify-content: center;
+            
+        }
+        
+        main{
+            margin-left:10px;
+            display:block;
+            border-top:200px;
+            margin:10%;
+            text-align: center;
+            align-items:center;
+            border: 5px solid;
+
+            
+        }
+
+        .menu{
+            width:100%;
+            max-width: 100%;
+            position:fixed;
+            display:flex;
+            top: 100px;
+            left:0;
+            justify-content: center;
+        }
+        .menu button{
+            display:block;
+            width:100%;
+            height:10vh;
+            max-width:100vw;
+            border:none;
+            background-color:#C8CCD0;
+            font-family: Bookman, URW Bookman L, serif;
+            font-size: 20px;
+            font-weight: bold;
+            transition: background-color 0.6s ease
+        }
+        .menu button:hover, .menu button:active{
+            background-color:#AFBFB2;
+        }
+
+
+        header{
+            position:fixed;
+            text-align:left;
+            font-size:20px;
+            top:0px;
+            margin-left:25px;
+            
+            width:100vw;
+            height: 150px;
+
+            background-color:#708B75;
+        }
+
+        h2{
+            
+            font-size: 40px;
+        }
+        content{
+            position:relative;
+            
+        }
+
+        section{
+            
+            display: none;
+        }
+        .active{
+            
+            display:block;
+            max-width:80vw
+        }
+        p{
+            padding-left:25%;
+            padding-right:25%;
+    
+        }
+        figcaption{
+            font-size: 9px;
+            padding-left:25%;
+            padding-right:25%;
+        }
+
+        table{
+            width:100%;
+            max-width:100%;
+            
+            border: 1px solid #212738;
+            border-collapse:collapse;
+            margin:20px 0;
+            font-size:18px;
+        }
+
+        th, td{
+            padding:8px;
+            font-size:1.5vw;
+            border:2px solid #212738
+
+        }
+        th{
+            background-color: #AFBFB2;
+        }
+
+        footer{
+            text-align:center;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fitness</h1>
+        <nav class="menu">
+            <button id = "aboutButton" onclick="show('about')">About</button>
+            <button id = "homeButton" onclick="show('home')">Home</button>
+            <button id ="scheduleButton" onclick="show('schedule')">Schedule</button>
+            <button id = "locationButton" onclick="show('location')">Location</button>
+            <button id = "routinesButton" onclick="show('routines')">Routines</button>
+            <button id = "aiButton" onclick="show('ai')">AI Prompts</button>
+
+        </nav>
+    </header>
+    <main>
+       <div class="content">
+
+        <section id="about" class="">
+            <h2>Fitness History</h2>
+            <p>
+                I have played sports my entire life. I started playing volleyball when I was 
+                about 9 years old, and it became my favorite sport. I continued to play volleyball
+                through highschool, and I also tried out basketball and softball.
+            </p>
+
+            <figure>
+                <img src="images/secondresized.jpg" alt="">
+                <figcaption>My sophomore year travel volleyball game</figcaption>
+
+            </figure>
+            
+            <p> I have more recently been focusing on keeping activity
+                and fitness a part of my weekly routine, as I know how important it is for my mental
+                and physical health. 
+            </p>
+            
+        </section>
+        <section id="home" class="active">
+            <h2>Activity, Movement, Physical Wellness</h2>
+            <p>
+                Some of my favorite activities that contribute to my physical health include running and 
+                lifting weights.I like to do these with my roommate Olivia. 
+            </p>
+
+            <figure>
+                <img src="images/resized.webp" alt="A pair of black dumbbells with a sleek, modern design resting on a wooden gym floor. The dumbbells have a metallic grip and hexagonal weights">
+
+                <figcaption>AI generated image of dumbells</figcaption>
+                
+            </figure>
+            <p>generated by ChatGPT- prompt: create a realistic image of a set of dumbells</p>
+
+            <figure>
+                <img src="images/shoesresized.webp" alt="A pair of high-performance running shoes with a modern, lightweight design. The shoes have a breathable mesh upper, cushioned soles, and a stylish">
+
+                <figcaption>AI generated image of a pair of running shoes</figcaption>
+                
+            </figure>
+            <p>generated by ChatGPT- prompt: create a realistic image of a pair of running shoes</p>
+
+
+        </section>
+        <section id="schedule" class="">
+            <h2>Times of the Day</h2>
+
+            <p>My weekly workout schedule is a lose guideline that describes what time I usually end up 
+                going to the gym. The times and rest days are not strict. 
+            </p>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sunday</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                        <th>Saturday</th>
+                    </tr>
+                </thead>
+                    
+                <tbody>
+                    <tr>
+                        <td>Rest or cardio</td>
+                        <td> 6pm - 8pm</td>
+                        <td> 11am - 1pm</td>
+                        <td> Rest day</td>
+                        <td> 11am - 1pm</td>
+                        <td>1pm-3pm</td>
+                        <td>Cardio anytime</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+            <p>
+                My schedule usually revolves around when I can fit in 2 hours to go to the gym in between 
+                my classes, hoemework, and my part-time job.
+            </p>
+        </section>
+        <section id="location" class="">
+            <h2>Gym Location</h2>
+
+            <p>I workout at my local gym to lift weights as well as run indoors. I 
+                also enjoy running on campus occasionally when the weather permits.
+            </p>
+
+            <figure>
+                <img src="images/treesResized.heic" alt="picture while jogging on campus">
+                <figcaption>
+                    Outside of woodward hall taken while jogging
+                </figcaption>
+            </figure>
+
+           
+            <p>
+                Jogging outside on a nice day is one of my favorite activties, and I always finish the run 
+                in a good mood. 
+            </p>
+            
+        </section>
+        <section id="routines" class="">
+            <h2>Workout Routines</h2>
+            
+            <p>Typically, I  workout my back and biceps on Tuesdays and my chest  and triceps on Thursdays, and my 
+                legs on Mondays and Fridays. I like to do at least 15 minutes of cardio after every workout. 
+            </p>
+
+            <figure>
+                <img src="images/treadmillresized.heic" alt="Treadmill Image of my best time yet">
+                <figcaption>Image of the treadmill after my all time record run distance</figcaption>
+            </figure>
+
+            <p>
+                I keep the longer cardio times to the days where I am only doing cardio, so I don't burn myself out of it.
+                I try to stick to doing the stairmaster on days when I workout my legs, and running when I workout my upper body 
+                . Above is an image of the longest distance I have ever gone without stopping. I know this isn't professional
+                level by any means, but 4 miles is a very good distance for me. 
+            </p>
+
+            
+
+
+
+
+        </section>
+        <section id="ai" class="">
+            <h2>AI Prompts</h2>
+
+            <h3>Prompt 1- Section separation and unique visibility: </h3>
+
+            <p>I want to have my website have different sections, each with separate headings, 
+                paragraphs and images, and those sections be hidden. I want a menu to appear on a 
+                sidebar with buttons that show each section of the site, but only one section 
+                should be visible at a time. How should I accomplish this?
+            </p>
+
+            <h3>Prompt 2- Moving the menu below the header using HTML: </h3>
+            <p>my header has a main title that I want to show up at all times, and I want the menu 
+                to appear below this.
+            </p>
+
+            <h3>Prompt 3- Making a table to describe my weekly workout schedule: </h3>
+            <p>(pt.1) I want to make a table using html and css only. The table should have 7 columns and 2 rows
+            </p>
+            <p>(pt. 2) how do i make it so that the table itself shrinks as well as the font when the window gets
+                 smaller. The table goes across the main border when the window is too small
+            </p>
+
+        </section>
+
+
+
+       </div>
+        
+    </main>
+    <footer>
+
+
+
+        <nav>
+            <p>Page built by: <a href="/itis3135/kialeydigital.com/index.html">Kialey Digital Solutions</a> ©2025</p>
+        </nav>
+    </footer>
+
+    <script>
+        function show(sectionID){
+            document.querySelectorAll("section").forEach((section) => {
+                section.classList.remove("active");
+
+            });
+
+            const sectionToShow = document.getElementById(sectionID);
+            sectionToShow.classList.add("active");
+        }
+    </script>
+    
+</body>
+
+
+</html>
