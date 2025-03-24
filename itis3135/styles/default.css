@@ -7,14 +7,39 @@ reddish pink: #AB4967
 Blue:#0F5257
 light blue: #15737A;
 
-*/
+
+/* Rule Overrides For Laptops / Small Screens */
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    
+}
+/* Rule Overrides For Tablet Devices */
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    body{
+        font-size:25px;
+        background-color: #E7F9A9;
+    }
+    footer{
+        font-size: 15px;
+    }
+}
+/* Rule Overrides For Mobile Devices */
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    body{
+        font-size:20px;
+        background-color: #BDE4A8;
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+
 body{
     padding:20px;
     text-align:center;
     color:#301A4B;
     background-color:#C1CEFE;
     font-family: Palatino, URW Palladio L, serif;
-    font-size: x-large;
+    font-size: 30px;
 }
 
 ul{
@@ -71,7 +96,7 @@ li{
 
 
 footer{
-    font-size: medium;
+    font-size: 18px;
 }
 
 .main-links{
@@ -79,7 +104,7 @@ footer{
 
 }
 .main-links:hover, .main-links:active{
-    font-size: larger;
+    font-size: 15px;
 
 }
 .main-links:hover, .main-links:active, .main-links:visited{
