@@ -55,6 +55,7 @@ light blue: #15737A;
 main { 
     margin: 0 auto; 
     width:90%;
+    max-width: 1400px;
 }
 
 body{
