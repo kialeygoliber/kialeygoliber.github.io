@@ -10,6 +10,15 @@ light blue: #15737A;
 
 /* Rule Overrides For Laptops / Small Screens */
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    body{
+        font-size: 30px;
+    }
+    footer{
+        font-size:18px;
+    }
+    main{
+        max-width:1200px
+    }
     
 }
 /* Rule Overrides For Tablet Devices */
@@ -21,9 +30,13 @@ light blue: #15737A;
     footer{
         font-size: 15px;
     }
+    main{
+        max-width: 800px
+    }
 }
 /* Rule Overrides For Mobile Devices */
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    
     body{
         font-size:20px;
         background-color: #BDE4A8;
@@ -31,6 +44,17 @@ light blue: #15737A;
     footer{
         font-size: 12px;
     }
+    main{
+        max-width: 400px
+    }
+}
+
+
+
+
+main { 
+    margin: 0 auto; 
+    width:90%;
 }
 
 body{
