@@ -172,3 +172,44 @@ header .button:hover, footer .button:hover{
 figcaption{
     font-size:12px
 }
+.table-doc{
+    width: 60%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.table-simple {
+    width: 90%;
+    margin: 0 auto; 
+    text-align: left;
+}
+
+.table-simple {
+    border: 2px solid #212738;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.table-simple td, .table-simple th {
+    border: 2px solid #301A4B;
+    padding: 8px;
+    width: auto; 
+}
+
+
+.table-simple td, .table-simple th {
+    width: 33%; 
+}
+
+.complex-table{
+    font-size: 30px;
+}
+
+.total-row{
+    text-align:right;
+}
+
+.table-two tr:nth-child(odd) {
+    background-color: #859FFE;
+    color: #301A4B; 
+}
