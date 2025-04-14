@@ -60,6 +60,7 @@ input[type="reset"] {
 }
 
 .agree-label {
+    margin-top: 50px;
 
     width:300px;
 }
