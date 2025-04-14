@@ -61,7 +61,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     const courses = [];
     const courseInputs = document.querySelectorAll('#courses-container input');
-    courseInputs.forEach(input => {
+    courseInputs.forEach((input) => {
         courses.push(input.value);
     });
     if (courses.length === 0) {
