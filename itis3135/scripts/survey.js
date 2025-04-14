@@ -5,7 +5,7 @@ function addCourse() {
     input.type = 'text';
     input.name = 'courses';
     input.placeholder = 'Enter course and why';
-    input.value = 'ITSC 3135';
+    input.value = 'ITSC 3135 : I wanted to suffer';
 
     const deleteBtn = document.createElement('button');
     deleteBtn.type = 'button';
@@ -64,6 +64,11 @@ document.getElementById('form').addEventListener('submit', function(event) {
     courseInputs.forEach(input => {
         courses.push(input.value);
     });
+    if (courses.length === 0) {
+        alert('Please add at least one course!');
+        return;
+    }
+
 
 
     const platform = document.getElementById('platform').value;
