@@ -59,13 +59,25 @@ input[type="reset"] {
     width: 25%;
 }
 
-.agree-label {
-    margin-top: 50px;
 
-    width:300px;
+.agree {
+    margin: 0 auto;
+    display: block;
+    padding: 20px;
+    align-items: center;
+    width: 50%;
+
 }
 
+.agree-label {
+    display: inline;
+    width: auto;
+}
+.agree-button {
+    margin-top: 4px;
+    margin-left:225px;
 
+}
 
 .formDataContainer p {
     padding: 10px;

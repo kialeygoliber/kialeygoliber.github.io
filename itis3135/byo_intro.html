@@ -69,8 +69,13 @@
             <input id="anything-else" name="anything-else" type="text" placeholder="anything else you would like to add..." value="N/A">
             <button  type="button" class="clear" onclick="clearValue('anything-else')">Clear</button>
 
-            <label class="agree-label" for="agree">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
-            <input id="agree" name="agree" value="checked" type="checkbox" class="agree" required >
+            <div class="agree" >
+                <label class="agree-label" for="agree">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
+                <input class="agree-button" id="agree" name="agree" type="checkbox" required >
+
+            </div>
+
+            
 
 
             <input type="submit" value="Submit"/>
