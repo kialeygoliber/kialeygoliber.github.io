@@ -10,7 +10,7 @@ body{
     text-align: center;
 }
 
-input, label{
+input:not([type="checkbox"]), label:not(.agree-label){
     margin: 0 auto;
     text-align: center;
     display: block;
@@ -25,11 +25,11 @@ textarea {
     margin-left:40px;
 }
 
-label{
+label:not(.agree-label){
     padding-bottom: 10px;
     padding-top:10px;
 }
-input{
+input:not([type="checkbox"]){
     padding: 5px;
 }
 
@@ -61,22 +61,23 @@ input[type="reset"] {
 
 
 .agree {
-    margin: 0 auto;
-    display: block;
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    width: 50%;
-
+    margin: 30px auto;
+    width: 60%;
+    text-align: center;
 }
 
 .agree-label {
-    display: inline;
-    width: auto;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
 }
-.agree-button {
-    margin-top: 4px;
-    margin-left:225px;
 
+.agree-button {
+    display: block;
+    margin: 0 auto;
 }
 
 .formDataContainer p {
