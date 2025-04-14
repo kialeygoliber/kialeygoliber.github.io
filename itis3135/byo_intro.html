@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script> 
+    <title> Kialey Goliber || ITIS 3135 || BYO Introduction</title>
+    <link rel="stylesheet" href="styles/survey.css">
+
+    </head>
+    <body>
+
+        <h1>Kialey Goliber ITIS 3135</h1>
+        <h2>Build Your Own Introduction Page!!</h2>
+
+        <form id="form">
+            <label for="name">Name: </label>
+            <input id="name" name="name" type="text" placeholder="Enter your name" value="Kialey Goliber" required>
+            <button  type="button" class="clear" onclick="clearValue('name')">Clear</button>
+
+            <label for="mascot">Mascot: </label>
+            <input id="mascot" name="mascot" type="text" placeholder="Enter the name of your mascot" value="Kaleidoscopic Giraffe" required>
+            <button  type="button" class="clear" onclick="clearValue('mascot')">Clear</button>
+
+            <label for="image">Image:  </label>
+            <input id="image" name="image" type="file" accept=".png, .jpg, .jpeg">
+            <img id="preview-image" src="./images/resized.jpg" alt="Default Image">
+
+            <label for="caption">Image Caption: </label>
+            <input id="caption" name="caption" type="text" placeholder="Enter a caption for your image..." value="Image of Kialey inside of a tree" required>
+            <button  type="button" class="clear" onclick="clearValue('caption')">Clear</button>
+
+
+            <label for="personal-background">Personal Background: </label>
+            <textarea name="personal-background" id="personal-background" rows="5" cols="55" placeholder="Please enter your personal background" required>I am from a small town about an hour away from Charlotte, and before that from an even smaller town even farther away from Charlotte.</textarea>
+            <button type="button" class="clear" onclick="clearText('personal-background')">Clear</button>
+
+
+            <label for="academic-background">Academic Background: </label>
+            <textarea name="academic-background" id="academic-background" rows="5" cols="55" placeholder="Please enter your academic background" required>I graduated from an early college high school so I got a diploma as well as an associates in Arts from my local community college.</textarea>
+            <button type="button" class="clear" onclick="clearText('academic-background')">Clear</button>
+            
+            <label for="professional-background">Professional Background: </label>
+            <textarea name="professional-background" id="professional-background" rows="5" cols="55" placeholder="Please enter your professional background" required>I have worked as a server at Outback Steakhouse part time since I graduated high school.</textarea>
+            <button type="button" class="textAreaClear" onclick="clearText('professional-background')">Clear</button>
+
+
+            <label for="subject-background">Background in Web Development: </label>
+            <textarea name="subject-background" id="subject-background" rows="10" cols="55" placeholder="Please enter your personal background in this subject" required>Back in high school I wanted to major in psychology, so I didn't have any computer science background prior to about 2 years ago when I started attending UNCC. I sometimes feel that I am a bit of a newbie in computer science as a whole because it seems like some of my classmates have been coding for many years already. I have no experience in web app development, but I am ready to learn!</textarea>
+            <button type="button" class="clear" onclick="clearText('subject-background')">Clear</button>
+            
+            <label for="platform">Primary Computer Platform: </label>
+            <input id="platform" name="platform" type="text" placeholder="Enter your primary computer platform" value="Macbook Air" required>
+            <button  type="button" class="clear" onclick="clearValue('platform')">Clear</button>
+
+
+            <label for="courses">Courses I'm taking and Why:</label>
+            <div id="courses-container">
+            </div>
+
+
+            <button type="button" onclick="addCourse()">Add Course</button>
+
+            <label for="funny">Funny/Interesting thing about you: </label>
+            <input id="funny" name="funny" type="text" placeholder="(optional) Put something funny..." value="I love to workout and go running with my roommate Olivia">
+            <button  type="button" class="clear" onclick="clearValue('funny')">Clear</button>
+
+            <label for="anything-else">Anything else?</label>
+            <input id="anything-else" name="anything-else" type="text" placeholder="anything else you would like to add..." value="N/A">
+            <button  type="button" class="clear" onclick="clearValue('anything-else')">Clear</button>
+
+            <label class="agree-label" for="agree">"I understand that what is on this page is not password protected and I will not put anything here that I don’t want publicly available."</label>
+            <input id="agree" name="agree" value="checked" type="checkbox" class="agree" required >
+
+
+            <input type="submit" value="Submit"/>
+            <input type="reset" value="Reset" onclick="resetForm()"/>
+        </form>
+
+        <div id="formDataContainer" class="formDataContainer">
+
+        </div>
+        
+        <script src="scripts/survey.js"></script>
+    </body>
+
+</html>
