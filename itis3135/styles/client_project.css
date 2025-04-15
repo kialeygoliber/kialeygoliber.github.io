@@ -9,6 +9,15 @@ body {
     text-align: center;
 }
 
+p {
+    font-size: 20px;
+    text-align: center;
+    margin: 0 auto;
+
+    width: 800px;
+
+}
+
 button {
 
     font-family: "Abel", sans-serif;
@@ -49,6 +58,10 @@ button {
     background-color: #9A827F;
     color: #253041
 
+}
+
+footer {
+    padding-top: 30px;
 }
 
 
