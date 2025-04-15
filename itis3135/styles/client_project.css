@@ -27,7 +27,7 @@ button {
     font-size: 20px;
 
     margin: 0 auto;
-    width: 24.5%;
+    width:19.5%;
     padding-top:20px;
     padding-bottom: 20px;
     
@@ -54,10 +54,20 @@ button {
 
 }
 
+.testimonials, #testimonials{
+    background-color: #CD9B89;
+    color: #2E2524;
+
+}
+
 .contact, #contact {
     background-color: #9A827F;
     color: #253041
 
+}
+
+ul {
+    
 }
 
 footer {
