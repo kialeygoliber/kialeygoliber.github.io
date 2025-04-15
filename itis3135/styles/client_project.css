@@ -1,0 +1,54 @@
+body {
+
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+button {
+
+    font-family: "Abel", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    font-size: 20px;
+
+    margin: 0 auto;
+    width: 24.5%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    
+    border: 0;
+
+}
+
+
+
+
+
+.tutoring, #index{
+    background-color: #B3CAD1;
+    color: #2E2524;
+}
+
+.about, #about{
+    background-color: #7E86A0;
+    color: #2E2524;
+}
+ .publications, #publications{
+    background-color: #34435B;
+    color: #B3CAD1
+
+}
+
+.contact, #contact {
+    background-color: #9A827F;
+    color: #253041
+
+}
+
+

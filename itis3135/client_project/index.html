@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dylan's Tutoring Services</title>
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/itis3135/styles/client_project.css">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    </head>
+    <body class="tutoring">
+        <header>
+            <nav class="menu">
+                <button id="about" onclick="changePage('/itis3135/client_project/about_dylan.html')">About Dylan</button>
+                <button id="index" onclick="changePage('/itis3135/client_project/index.html')">Tutoring Services</button>
+                <button id="publications" onclick="changePage('/itis3135/client_project/publications.html')">Publications</button>
+                <button id="contact" onclick="changePage('/itis3135/client_project/contact_dylan.html')">Contact Dylan!</button>
+            </nav>
+
+
+
+            <h1>
+                Dylan's Science and Math Tutoring 
+            </h1>
+        </header>
+        <main>
+
+            
+
+
+
+
+
+
+
+
+        </main>
+        <footer>
+
+            
+
+            
+            <p>Page built by: <a href="itis3135/kialeydigital.com/index.html">Kialey Digital Solutions</a> ©2025</p>
+
+        </footer>
+
+
+        <script>
+            document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+        </script>
+        <script src="/itis3135/scripts/include.js"></script>
+        <script src="/itis3135/scripts/client_project.js"></script>
+
+        <script>
+        function show(sectionID){
+            document.querySelectorAll("section").forEach((section) => {
+                section.classList.remove("active");
+
+            });
+
+            const sectionToShow = document.getElementById(sectionID);
+            sectionToShow.classList.add("active");
+        }
+    </script>
+    </body>
+</html>
+
