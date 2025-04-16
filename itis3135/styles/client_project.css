@@ -166,3 +166,25 @@ a:visited {
     margin: 0 auto;
 
 }
+
+label, .submit-button{
+    display: block;
+    
+}
+.submit-button{
+    padding:4px;
+
+}
+input {
+    padding: 10px;
+    font-size: 15px;
+    background-color: #D4AB9B;
+    color: #253041;
+    margin-bottom: 30px;
+    width: 300px;
+}
+
+ input::placeholder {
+    color: #9d8686;
+
+}
