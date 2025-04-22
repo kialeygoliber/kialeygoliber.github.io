@@ -43,10 +43,3 @@ showSlides(slideIndex);
 function changeSlides(n) {
     showSlides(slideIndex += n);
 }
-/*
-
-// Thumbnail image controls (optional thumbnails)
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-    */
