@@ -1,4 +1,5 @@
 body {
+    box-sizing: border-box;
     text-align: center;
     background-color: #284B63;
     color: #EEF0EB;
@@ -73,6 +74,7 @@ header .button:hover, footer .button:hover{
 }
 
 .caption-container {
+    box-sizing: border-box;
     margin: 0 auto;
     width: 75%;
     background-color: #153243;
