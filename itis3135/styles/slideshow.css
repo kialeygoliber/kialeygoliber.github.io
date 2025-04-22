@@ -5,6 +5,13 @@ body {
     color: #EEF0EB;
 
     font-size: 20px;
+
+    margin: 0 auto;
+    font-family: "National Park", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
 }
 .slides {
     display: none;
@@ -22,9 +29,7 @@ body {
 
 .slideshow {
     align-items: center;
-    margin: 0 auto;
     
-
 }
 
 header .button, footer .button{
@@ -41,7 +46,7 @@ header .button, footer .button{
 
 header .button:hover, footer .button:hover{
     display: inline-block;
-    padding: 9px 12px;
+    padding: 3px 6px;
     background-color: #E1B7CE;
     color: #301A4B;
     border-radius: 5px;
@@ -91,5 +96,9 @@ header .button:hover, footer .button:hover{
     color: #284B63;
     border-radius: 5px;
     text-decoration: none;
+}
+
+a {
+    color: #B4B8AB
 }
 
