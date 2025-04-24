@@ -26,14 +26,19 @@
         </header>
         <main>
 
-            <h2>Contact Dylan!</h2>
-            <p> <strong>Phone:</strong>828-999-9999</p>
-            <p><strong>Email: </strong>goliberdylan@gmail.com</p>
-            <p><strong>Office: </strong>Catawba Valley Community College, 2550 US Hwy 70 SE, Hickory, NC 28602</p>
+            <div class="contact-info">
+                <h2>Contact Dylan!</h2>
+                <p> <strong>Phone:</strong>828-999-9999</p>
+                <p><strong>Email: </strong>goliberdylan@gmail.com</p>
+                <p><strong>Office: </strong>Catawba Valley Community College, 2550 US Hwy 70 SE, Hickory, NC 28602</p>
 
 
-            <h2>or, give us your info, and we'll contact you!</h2>
-            <form  class="form" action="submit">
+
+            </div>
+
+            
+            <h2 class="contact-message" id="contact-message">or, give us your info, and we'll contact you!</h2>
+            <form  class="contact-form" id="contact-form" onsubmit="SubmitContactForm(event)">
 
                 <label for="name">Name: </label>
                 <input id="name" name="name" type="text" placeholder="Enter your name" required>
@@ -44,10 +49,9 @@
                 <label for="phone">Phone: </label>
                 <input id="phone" name="phone" type="text" placeholder="Enter your phone number (optional)">
 
-                <button class="submit-button">Submit</button>
+                <!-- <button class="submit-button">Submit</button> --> 
 
-
-
+                <input id="submit" class="submit" type="submit">
 
             </form>
         </main>

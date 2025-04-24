@@ -14,7 +14,7 @@
     <body class="tutoring">
         <header>
             <nav class="menu">
-                <button id = "about" onclick="changePage('about_dylan.html')">About Dylan</button>
+                <button id ="about" onclick="changePage('about_dylan.html')">About Dylan</button>
                 <button id="index" onclick="changePage('index.html')">Tutoring Services</button>
                 <button id="publications" onclick="changePage('publications.html')">Publications</button>
                 <button id="testimonials" onclick="changePage('testimonials.html')">Testimonials</button>
@@ -32,28 +32,36 @@
                 <p>
                 Dylan offers a wide range of personalized tutoring services across several academic and creative disciplines. Whether you're preparing for exams, need help grasping tough concepts, or want to explore your musical side, Dylan is here to guide you every step of the way.
                 </p>
-            
-                
-                <h3>Piano Lessons</h3>
 
-                <p>Although Dylan is self taught, he has had a strong passion for music since childhood. Growing up he had the opportunity to
+                <button class="dropdown piano-button" onclick="dropdown('piano-lessons', 'Piano')"> ▼ Piano Lessons ▼</button>
+               
+                
+
+                <div class=" service piano-lessons inactive">
+                    <p>Although Dylan is self taught, he has had a strong passion for music since childhood. Growing up he had the opportunity to
                     learn 8 different instruments. He is a natural at reading music and is a very patient and experienced in teaching music and more 
                     specifically piano. 
-                </p>
+                    </p>
+                </div>
+                <button class="dropdown chemistry-button" onclick="dropdown('chemistry-tutoring', 'Chemistry')">▼ Chemistry Tutoring ▼</button>
 
-    
-                <h3>Chemistry Tutoring</h3>
-
-                <p>Chemistry is one of the tougher classes in school, but with Dylan's help you'll be able to ace those physical
+                <div class=" service chemistry-tutoring inactive">
+                    <p>Chemistry is one of the tougher classes in school, but with Dylan's help you'll be able to ace those physical
                     chemistry tests with ease and confidence! With Dylan's bachelor's degree being in chemistry, he is considered an expert in the field. He has
                     the knowledge and experience available to tutor in general, inorganic, and physical chemistry up to collegiate level.
             
-                </p>
-            
-                <h3>Math Tutoring</h3>
+                    </p>
+                </div>
+
+                <button class="dropdown math-button" onclick="dropdown('math-tutoring', 'Math')"> ▼ Math Tutoring ▼</button>
+
+                <div class="service math-tutoring inactive">
                 <p>Dylan has current work experience at Catawba Valley Community College tutoring for calculus and algebra courses. 
                     he excells in these areas and has a hands on approach at helping you understand those tough formulas. 
                 </p>
+
+                </div>
+                
             </div>
         </main>
         <footer>
@@ -70,6 +78,7 @@
         <script src="/itis3135/scripts/include.js"></script>
         <script src="client_project.js"></script>
 
+        <!--
         <script>
         function show(sectionID){
             document.querySelectorAll("section").forEach((section) => {
@@ -81,6 +90,9 @@
             sectionToShow.classList.add("active");
         }
     </script>
+        -->
+
+        
     </body>
 </html>
 

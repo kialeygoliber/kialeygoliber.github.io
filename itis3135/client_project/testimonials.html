@@ -26,17 +26,19 @@
         </header>
         <main>
             <div class="quote-boxes">
-                <div class=" box box-1">
+                <div class=" box box-1 active">
                     <h2>Adam J. highschool, senior- <em>"Incredible tutor! Helped me pass chemistry with confidence."</em></h2>
                     <p>Dylan Goliber is amazing! I was struggling with stoichiometry and acid-base reactions, 
                         and he broke everything down in a way that finally made sense. He’s patient, funny, 
                         and really knows his stuff. Can’t recommend him enough!</p>
                 </div>
-                <div class=" box box-2">
+                
+                <div class=" box box-2 next" >
                     <h2> Jacob T., college freshman - <em>“Math went from nightmare to favorite subject.”</em> </h2>
                     <p>I used to dread calculus, but Dylan explained derivatives and integrals in a way that actually clicked. 
                         He’s super chill and always finds creative ways to explain complex concepts. He’s the GOAT.</p>
                 </div>
+
                 <div class=" box box-3">
                     <h2> Vanessa R., parent of a 12-year-old - <em>“Great with kids and adults alike.”</em> </h2>
                     <p>My daughter takes piano lessons with Dylan, and she looks forward to them every week. He balances discipline and 
@@ -52,13 +54,16 @@
                     <p> Dylan makes everything less intimidating — even the terrifying stuff like logarithms and equilibrium equations. He’s 
                         encouraging without being fake about it, and really wants you to understand, not just memorize.</p>
                 </div>
-                <div class=" box box-2">
+                <div class=" box box-2 previous">
                     <h2>Noah D., adult piano student - <em>“Patient, professional, and easy to talk to.”</em> </h2>
                     <p>I started piano as an adult and was super nervous, but Dylan made me feel totally at ease. His lessons are structured 
                         but adaptable, and he never makes you feel bad for needing to slow down.</p>
                 </div>
 
             </div>
+
+            <button  class="slideshow-button" onclick="previousSlide()"> Previous</button>
+            <button  class="slideshow-button" onclick="nextSlide()"> Next</button>
             
         </main>
         <footer>

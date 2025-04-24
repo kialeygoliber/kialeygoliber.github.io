@@ -213,3 +213,8 @@ figcaption{
     background-color: #859FFE;
     color: #301A4B; 
 }
+
+.review-image {
+    margin: 0 auto;
+    margin-left: 0;
+}
