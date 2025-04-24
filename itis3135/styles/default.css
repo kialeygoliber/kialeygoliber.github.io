@@ -72,9 +72,11 @@ ul{
     padding-right: 10%;
     justify-content: left;
     text-align:left;
+    font-size: 18px;
 }
 li{
-    padding-bottom: 15px;
+    padding: 5px;
+    
 }
 
 
@@ -216,5 +218,5 @@ figcaption{
 
 .review-image {
     margin: 0 auto;
-    margin-left: 0;
+    margin-left: 9px;
 }
