@@ -12,15 +12,17 @@ footer p{
     margin: 0 auto;
 }
 
-
+/*about-p aligns the paragraph sections in the about page so that they are left justified but still centered in the page.*/
 
 .about-p {
     font-size: 20px;
-    text-align: center;
+    text-align: left;
     margin: 0 auto;
     width: 800px;
 
 }
+
+/*Wanted the contact info to be in the center and be left justified but moved over just a little bit so it was still in the center*/
 
 .contact-info{
     margin: 0 auto;
@@ -30,11 +32,11 @@ footer p{
 
 p {
     text-align: left;
+    font-size: 20px;
 }
 
-
+/*This is the formatting for the buttons in the navigation bar*/
 button {
-
     font-family: "Abel", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -52,25 +54,34 @@ button {
 
 
 
-
+/*making the different backgrounds match the colors of the buttons*/
 
 .tutoring, #index{
-    background-color: #B3CAD1;
+    background-color: #C7E6EF;
     color: #2E2524;
 }
 
 .about, #about{
-    background-color: #7E86A0;
+    background-color: #B1BEE7;
     color: #2E2524;
 }
  .publications, #publications{
-    background-color: #34435B;
-    color: #B3CAD1
+    background-color: #212E6E;
+    color: #C7E6EF
+
+}
+.testimonials, #testimonials{
+    background-color: #F0C9B9;
+    color: #2E2524;
 
 }
 
+.contact, #contact {
+    background-color: #DCB7B4;
+    color: #253041
+}
 
-
+/*all the gallery objects are for the design of the images on the publications page */
 .gallery {
     display: flex;
     flex-wrap: wrap;
@@ -90,17 +101,8 @@ button {
     transform: scale(1.05);
   }
 
-.testimonials, #testimonials{
-    background-color: #CD9B89;
-    color: #2E2524;
 
-}
-
-.contact, #contact {
-    background-color: #9A827F;
-    color: #253041
-}
-
+/*quote box formatting for the testimonials page*/
 .quote-boxes {
     box-sizing:border-box;
     position: relative;
@@ -148,6 +150,8 @@ button {
 
 } 
 
+/*this removes the quote boxes that are not currently shown in the slideshow*/
+
 .box:not(.active):not(.next):not(.previous) {
     display: none;
 }
@@ -158,23 +162,25 @@ button {
     padding-top: 20px;
 }
 
+
+/*Making the quote boxes different alternating colors*/
 .box-1 {
-    background-color: #253041;
-    color: #D4AB9B;
+    background-color: #212E6E;
+    color: #F0C9B9;
 
 }
 .box-2 {
-    background-color: #C96454;
-    color: #253041
+    background-color: #462255;
+    color: #C7E6EF
 
 }
 .box-3 {
-    background-color: #9B3F31;
-    color: #7E86A0;
+    background-color: #E77463;
+    color: #B1BEE7;
 
 }
 .box-4 {
-    background-color: #7E86A0;
+    background-color: #B1BEE7;
     color: #2E2524;
 
 }
@@ -198,6 +204,8 @@ footer {
     padding-top: 30px;
 }
 
+/*Changing the colors of the links for the page*/
+
 a {
     color: #823329;
 
@@ -216,6 +224,8 @@ a:visited {
     color: #C96454
 }
 
+
+/*Formatting and spacing for the contact page and the form on that page*/
 .services {
     width: 700px;
     margin: 0 auto;
@@ -236,7 +246,7 @@ input {
     display: block;
     padding: 10px;
     font-size: 15px;
-    background-color: #D4AB9B;
+    background-color: #F0C9B9;
     color: #253041;
     margin-bottom: 30px;
     width: 300px;
@@ -252,7 +262,7 @@ input {
 
 }
 
-
+/*All the formatting for the services dropdown options on the services page*/
 
 .inactive {
     display: none;
@@ -262,6 +272,7 @@ input {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.5s ease;
+    font-size: 20px;
 }
 
 .service:not(.inactive) {
@@ -269,6 +280,7 @@ input {
 }
 
 .dropdown {
+    box-sizing:border-box;
     text-align: center;
     align-items: center;
     margin: 0 auto;
