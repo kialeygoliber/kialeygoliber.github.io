@@ -1,7 +1,7 @@
 function setup() {
     createCanvas(1000, 600, WEBGL);
   angleMode(DEGREES);
-  strokeWeight(5);
+  strokeWeight(2);
   noFill();
   stroke(224, 253, 213);
   describe(
@@ -13,8 +13,8 @@ function setup() {
 
     orbitControl();
 
-    for (let zAngle = 0; zAngle < 280; zAngle += 25) {
-        for (let xAngle = 0; xAngle < 300; xAngle += 50) {
+    for (let zAngle = 0; zAngle < 180; zAngle += 25) {
+        for (let xAngle = 0; xAngle < 360; xAngle += 50) {
             push();
 
             rotateZ(zAngle);
