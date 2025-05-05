@@ -1,24 +1,37 @@
 function addCourse() {
     const container = document.getElementById("courses-container");
 
-    const input = document.createElement("input");
-    input.type = 'text';
-    input.name = 'courses';
-    input.placeholder = 'Enter course and why';
-    input.value = 'ITSC 3135 : I wanted to suffer';
+    const courseContainer = document.createElement('div');
+
+    const courseInput = document.createElement("input");
+
+    courseInput.type = 'text';
+    courseInput.placeholder = 'Enter course name: ';
+    courseInput.className = 'course-name';
+    courseInput.value = 'ITSC-3135';
+
+    const whyInput = document.createElement("input");
+
+    whyInput.name = 'course-reason';
+    whyInput.className = 'course-reason';
+    whyInput.type = 'text';
+    whyInput.value = 'I wanted to suffer';
+
 
     const deleteBtn = document.createElement('button');
     deleteBtn.type = 'button';
     deleteBtn.textContent = 'Delete';
+
     deleteBtn.onclick = () => {
-        container.removeChild(input);
-        container.removeChild(deleteBtn);
+        container.removeChild(courseContainer);
     };
 
 
-    container.appendChild(input);
-    container.appendChild(deleteBtn);
+    courseContainer.appendChild(courseInput);
+    courseContainer.appendChild(whyInput);
+    courseContainer.appendChild(deleteBtn);
 
+    container.appendChild(courseContainer);
 }
 
 function clearValue(elementId) {
@@ -38,6 +51,7 @@ function resetForm() {
     document.getElementById('form').reset(); 
     const courseContainer = document.getElementById('courses-container');
     courseContainer.innerHTML = ''; 
+    const formDataContainer = document.getElementById('formDataContainer'); 
     formDataContainer.innerHTML = '';
     document.getElementById('form').style.display = 'block';
 
@@ -76,30 +90,50 @@ document.getElementById('form').addEventListener('submit', function(event) {
     const anythingElse = document.getElementById('anything-else').value;
 
     
-    const formDataContainer = document.getElementById('formDataContainer');
+    /*const formDataContainer = document.getElementById('formDataContainer');*/
+
+
+    let courseListHTML = '<li><strong>Courses:</strong><ul>';
+    const courseGroups = document.querySelectorAll('#courses-container div');
+    courseGroups.forEach((group) => {
+        const course = group.querySelector('.course-name').value.trim();
+        const reason = group.querySelector('.course-reason').value.trim();
+        if (course) {
+            courseListHTML += `<li><strong>${course}:</strong> ${reason}</li>`;
+        }
+    });
+    courseListHTML += '</ul></li>';
+
+
     formDataContainer.innerHTML = `
-        <h3>BYO Form Info </h3>
-        <p><strong>Name:</strong> ${name}</p>
-        <p><strong>Mascot:</strong> ${mascot}</p>
-        <p><strong>Image Caption:</strong> ${caption}</p>
-        <p><strong>Image: </strong> </p>
 
-        <img src="${imageSrc}" alt="Uploaded Image" style="max-width: 400px; max-height: 400px;">
+         <h3> ${name}, ${mascot} </h3>
 
-        <p><strong>Personal Background:</strong> ${personalBackground}</p>
-        <p><strong>Academic Background:</strong> ${academicBackground}</p>
-        <p><strong>Professional Background:</strong> ${professionalBackground}</p>
-        <p><strong>Web Development Background:</strong> ${subjectBackground}</p>
-        <p><strong>Primary Computer Platform:</strong> ${platform}</p>
 
-        <p><strong>Courses:</strong> ${courses.join(', ')}</p>
 
-        <p><strong>Funny/Interesting Fact:</strong> ${funny}</p>
-        <p><strong>Anything else:</strong> ${anythingElse}</p>
+         <figure>
+            <img src="${imageSrc}" alt="Uploaded Image" style="max-width: 400px; max-height: 400px;">
+
+            <figcaption>${caption}</figcaption>
+        </figure>
+
+        <ul>
+            <li><strong>Personal Background:</strong> ${personalBackground}</li>
+            <li><strong>Academic Background:</strong> ${academicBackground}</li>
+            <li><strong>Professional Background:</strong> ${professionalBackground}</li>
+            <li><strong>Web Development Background:</strong> ${subjectBackground}</li>
+            <li><strong>Primary Computer Platform:</strong> ${platform}</li>
+            ${courseListHTML}
+            <li><strong>Funny/Interesting Fact:</strong> ${funny}</li>
+            <li><strong>Anything else:</strong> ${anythingElse}</li>
+            
+        </ul>
         <input type="reset" value="Reset" onclick="resetForm()"/>
+        
         `
     ;
 
     document.getElementById('form').style.display = 'none';
 
 });
+
